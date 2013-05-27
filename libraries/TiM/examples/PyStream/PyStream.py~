@@ -1,0 +1,52 @@
+import time
+import serial
+from pylab import *
+from numpy import *
+
+CKSUM_FAIL = 'F'
+READY = 'R'
+
+s = serial.Serial('/dev/ttyUSB0', baudrate=115200, timeout=1)
+
+display = ones((8, 64, 3), uint8)
+
+def cksum(msg):
+    return int((sum([ord(c) for c in msg])) % 256) == 0
+
+def makeMSG(row, col):
+    buffer = display[row, col / 16: col/16 + 16]
+    # buffer = ones((16, 3), uint8) * 25
+
+    cksum_val = -int(sum(buffer) + row + col + ord('\n'))
+    cksum_val %= 256
+    out = '%s%s%s%s\n' % (buffer.tostring(), chr(row), chr(col), chr(cksum_val))
+    if not cksum(out):
+        raise ValueError('Cksum reality check failed!?')
+    return out
+def frame(count):
+    global display
+    if count % 2:
+        display -= 10
+    else:
+        display += 10
+    time.sleep(0)
+    
+count = 0
+row = 0
+col = 0
+while 1:
+    c = s.read(1)
+    if c == READY:
+        s.write(makeMSG(row, col))
+        col += 16
+        if col >= 64:
+            col = 0
+            row += 1
+            if row == 8:
+                row = 0
+                frame(count)
+                count += 1
+    else:
+        print 'not ready, c = %s' % c
+
+

@@ -1,0 +1,8 @@
+from numpy import *
+
+buffer = zeros((N, 3), byte)
+N = 250
+
+
+class piPixel:
+    def __init__(self):
