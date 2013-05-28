@@ -6,6 +6,8 @@ from numpy import *
 
 CKSUM_FAIL = 'F'
 READY = 'R'
+CMD_COPYONLY = chr(0)
+CMD_SHOW = 'S'
 
 s = serial.Serial('/dev/ttyUSB0', baudrate=115200, timeout=.01)
 
@@ -14,13 +16,13 @@ pixels = ones((64, 8, 3), uint8)
 def cksum(msg):
     return int((sum([ord(c) for c in msg])) % 256) == 0
 
-def makeMSG(row, col):
+def makeMSG(row, col, cmd=CMD_COPYONLY):
     buffer = pixels[col: col + 16, row]
     # buffer = ones((16, 3), uint8) * 25
 
     cksum_val = -int(sum(buffer) + row + col + ord('\n'))
     cksum_val %= 256
-    out = '%s%s%s%s\n' % (buffer.tostring(), chr(row), chr(col), chr(cksum_val))
+    out = '%s%s%s%s%s\n' % (buffer.tostring(), chr(row), chr(col), chr(cksum_val), cmd)
     if not cksum(out):
         raise ValueError('Cksum reality check failed!?')
     return out

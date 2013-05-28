@@ -1,3 +1,5 @@
+// TODO Add Licence
+
 #include "TiM.h"
 #include "Adafruit_NeoPixel.h"
 
@@ -9,13 +11,16 @@ const uint8_t N_LED_PER_MSG = 16;
 const uint16_t N_BYTE_PER_STRIP = N_LED_PER_STRIP * N_BYTE_PER_LED;
 const char READY = 'R';
 const char CKSUM_FAIL = 'F';
+const char CMD_SHOW = 'S';
 const uint16_t MSG_LEN = (N_BYTE_PER_LED * N_LED_PER_MSG + 
 			  1                   + // ROW
                           1                   + // COL
                           1                   + // CKSUM
+			  1                   + // COMMAND
                           1);                   // carrage return
 const uint8_t ROW_IDX = N_BYTE_PER_LED * N_LED_PER_MSG;
 const uint8_t COL_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 1;
+const uint8_t CMD_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 2;
 const uint32_t TIMEOUT_MS = 1000;
 
 // globals
@@ -77,7 +82,7 @@ void loop(){
 }
 
 void interact(){
-  uint8_t row, col;
+  uint8_t row, col, cmd;
   
   Serial.write(READY); 
   uint32_t start = millis();
@@ -89,17 +94,20 @@ void interact(){
   }
   if(cksum(message)){
     row = message[ROW_IDX];
+    col = message[COL_IDX];
+    cmd = message[CMD_IDX];
     if(row != last_row){
       last_row = row;
       tim.show();
     }
-    col = message[COL_IDX];
     for(uint8_t i=0; i < N_LED_PER_MSG; i++){
       for(uint8_t j=0; j < N_BYTE_PER_LED; j++){
 	buffer[(col + i) * N_BYTE_PER_LED + j] = message[i * N_BYTE_PER_LED + j];
       }
     }
     tim.strips[row].changed = true;
+    //tim.show();
+    //if(cmd == CMD_SHOW) tim.show();
   }
   else{
     Serial.write(CKSUM_FAIL);

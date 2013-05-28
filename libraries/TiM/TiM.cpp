@@ -31,7 +31,10 @@ void TiM::setup(uint16_t _n_strip, uint16_t _led_per_strip, uint8_t *pins,
 
 void TiM::show(void) {
   uint16_t i;
-  for(i = 0; i < n_strip; i++){
+  for(i = 0; i < n_strip; i+=2){ // interleave
+    strips[i].show();
+  }
+  for(i = 1; i < n_strip; i+=2){
     strips[i].show();
   }
 }
