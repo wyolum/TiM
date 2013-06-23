@@ -1,7 +1,6 @@
 import PIL.Image as Image
 import time
 import serial
-from pylab import *
 from numpy import *
 
 CKSUM_FAIL = 'F'
@@ -12,7 +11,9 @@ SWAP_12 = False
 CMD_COPYONLY = chr(0)
 CMD_SHOW = 'S'
 
-s = serial.Serial('/dev/ttyUSB0', baudrate=115200, timeout=.01)
+port = '/dev/ttyUSB0'
+port = '/dev/ttyS0'
+s = serial.Serial(port, baudrate=115200, timeout=.01)
 while s.read():
     pass
 NCOL = 16
