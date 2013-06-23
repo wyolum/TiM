@@ -9,8 +9,9 @@ void setup(){
   // each Pin has 32 leds
   //    #rows #led pin_ids
   tim.setup(8, 64, pins);
-  tim.setall(Color(0, 0, 0));
+  tim.setall(Color(255, 255, 255));
   tim.show();
+  delay(1000);
 }
 
 uint32_t count = 0;

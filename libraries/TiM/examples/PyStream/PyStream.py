@@ -41,6 +41,8 @@ def update_pixels(image):
 
     ## black and white?
     # xsdisplay[:,:] = sum(display, axis=2)[:,:,newaxis] ## comment out for color
+
+    ## swap channels 0 and 1
     tmp = display[:,:,0]
     display[:,:,0] = display[:,:,1]
     display[:,:,1] = tmp

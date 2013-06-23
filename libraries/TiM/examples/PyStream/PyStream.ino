@@ -106,7 +106,7 @@ void interact(){
       }
     }
     tim.strips[row].changed = true;
-    //tim.show();
+    tim.show();
     //if(cmd == CMD_SHOW) tim.show();
   }
   else{
