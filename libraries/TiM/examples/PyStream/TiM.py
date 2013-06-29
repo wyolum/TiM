@@ -11,13 +11,10 @@ SWAP_12 = False
 CMD_COPYONLY = chr(0)
 CMD_SHOW = 'S'
 
-<<<<<<< HEAD
-s = serial.Serial('/dev/ttyUSB1', baudrate=115200, timeout=.01)
-=======
 port = '/dev/ttyUSB0'
 port = '/dev/ttyS0'
 s = serial.Serial(port, baudrate=115200, timeout=.01)
->>>>>>> 36e9b192c4d62159a649cc0b5a0f074ea4d230bc
+
 while s.read():
     pass
 NCOL = 16
