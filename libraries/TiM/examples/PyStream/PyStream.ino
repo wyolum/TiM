@@ -12,15 +12,16 @@ const uint16_t N_BYTE_PER_STRIP = N_LED_PER_STRIP * N_BYTE_PER_LED;
 const char READY = 'R';
 const char CKSUM_FAIL = 'F';
 const char CMD_SHOW = 'S';
-const uint16_t MSG_LEN = (N_BYTE_PER_LED * N_LED_PER_MSG + 
+const uint16_t MSG_LEN = (1                   + // CKSUM
+			  N_BYTE_PER_LED * N_LED_PER_MSG + 
 			  1                   + // ROW
                           1                   + // COL
-                          1                   + // CKSUM
 			  1                   + // COMMAND
                           1);                   // carrage return
-const uint8_t ROW_IDX = N_BYTE_PER_LED * N_LED_PER_MSG;
-const uint8_t COL_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 1;
-const uint8_t CMD_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 2;
+const uint8_t DAT_IDX = 1;
+const uint8_t ROW_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 1;
+const uint8_t COL_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 2;
+const uint8_t CMD_IDX = N_BYTE_PER_LED * N_LED_PER_MSG + 3;
 const uint32_t TIMEOUT_MS = 1000;
 
 // globals
@@ -102,7 +103,8 @@ void interact(){
     }
     for(uint8_t i=0; i < N_LED_PER_MSG; i++){
       for(uint8_t j=0; j < N_BYTE_PER_LED; j++){
-	buffer[(col + i) * N_BYTE_PER_LED + j] = message[i * N_BYTE_PER_LED + j];
+	buffer[(col + i) * N_BYTE_PER_LED + j] = 
+	  message[DAT_IDX + i * N_BYTE_PER_LED + j];
       }
     }
     tim.strips[row].changed = true;
@@ -117,7 +119,7 @@ void interact(){
 bool cksum(uint8_t *msg){
   uint8_t val = 0;
   for(uint8_t i=0; i < MSG_LEN; i++){
-    val += msg[i];
+    val += (i + 1) * msg[i];
   }
   return val == 0;
 }

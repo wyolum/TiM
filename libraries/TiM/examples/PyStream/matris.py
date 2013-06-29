@@ -15,8 +15,8 @@ class BrokenMatrixException(Exception):
 
 
 
-# BGCOLOR = (15, 15, 20)#(40,40,40)
-BGCOLOR = (0, 0, 0)#(40,40,40)
+BGCOLOR = (10, 10, 10)#(40,40,40)
+# BGCOLOR = (0, 0, 0)#(40,40,40)
 BORDERCOLOR = (140, 140, 140)
 
 BLOCKSIZE = 20

@@ -9,24 +9,56 @@ READY = 'R'
 CMD_COPYONLY = chr(0)
 CMD_SHOW = 'S'
 
-s = serial.Serial('/dev/ttyUSB0', baudrate=115200, timeout=.01)
+class Dummy():
+    def read(self, n=1):
+        return 'R' * n
+    def write(self, *args, **kw):
+        pass
+s = serial.Serial('/dev/ttyUSB1', baudrate=115200, timeout=.01)
+# s = Dummy()
 
 pixels = ones((64, 8, 3), uint8)
 
 def cksum(msg):
-    return int((sum([ord(c) for c in msg])) % 256) == 0
+    n = len(msg)
+    v = arange(n) + 1
+    x = fromstring(msg, uint8)
+    out = dot(v, x) % 256 == 0
+    if not out:
+        s = 0
+        for i, y in zip(v, x):
+            s += i * y
+            print i, y, s % 256
+            
+    return out
+'''
+### compute a checksum
+
+0 = dot ([1, 2, 3, ..., k], [v, a, b, ..., c, '\n'])
+0 = v + 2a + 3b + ... (k-1)c + k'\n'
+v = -(2a + 3b + ... (k-1)c + k'\n')
+v = -dot([2, 3, 4, ... k], [a, b, ..., v, '\n'])
+v = -dot(arange(2, k + 1), [a, b, ...])
+'''
+
+
 
 def makeMSG(row, col, cmd=CMD_COPYONLY):
-    buffer = pixels[col: col + 16, row]
+    buffer = pixels[col: col + 16, row].ravel()
     # buffer = ones((16, 3), uint8) * 25
-
-    cksum_val = -int(sum(buffer) + row + col + ord('\n'))
+    cksum_val = 256 - (dot(arange(16 * 3) + 2, buffer) + 
+                       row * 50 +
+                       col * 51 +
+                       ord(cmd) * 52 + 
+                       ord('\n') * 53)
+    # cksum_val = -int(sum(buffer) + row + col + ord('\n'))
     cksum_val %= 256
-    out = '%s%s%s%s%s\n' % (buffer.tostring(), chr(row), chr(col), chr(cksum_val), cmd)
+    out = '%s%s%s%s%s\n' % (chr(cksum_val), buffer.tostring(), 
+                            chr(row), chr(col), cmd)
     if not cksum(out):
         raise ValueError('Cksum reality check failed!?')
     return out
-
+makeMSG(0, 0)
 count = 0
 row = 0
 col = 0
@@ -55,7 +87,7 @@ def update_pixels(image):
     if c == READY:
         s.write(makeMSG(row, col))
         col += 16
-        if col >= 64:
+        if col >= 16:
             col *= 0
             row += 1
             if row == 8:

@@ -4,6 +4,7 @@ TiM tim;
 
 // Use Arduino Pins 2-9 for controling the rows of TiM
 uint8_t pins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
+// uint8_t pins[8] = {0, 1, 2, 3, 4, 5, 6, 7};
 
 void setup(){
   // each Pin has 32 leds
