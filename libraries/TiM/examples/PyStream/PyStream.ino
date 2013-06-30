@@ -82,19 +82,26 @@ void loop(){
   interact();
 }
 
+// cursors for msg buffer
+uint8_t end_cursor = 0;
+
 void interact(){
-  uint8_t row, col, cmd;
+  uint8_t row, col, cmd, i, j;
   
-  Serial.write(READY); 
   uint32_t start = millis();
-  while((millis() - start < TIMEOUT_MS) && 
-	(Serial.available() < MSG_LEN)){ // wait for complete message
-  }
-  if(Serial.available() >= MSG_LEN){
-    for(uint8_t i=0; i < MSG_LEN; i++){
-      message[i] = Serial.read();
+  while(millis() - start < TIMEOUT_MS && 
+	end_cursor < MSG_LEN){
+    if(Serial.available()){
+      message[end_cursor] = Serial.read();
+      end_cursor++;
     }
-    if(cksum(message) != 0){
+  }
+  if(end_cursor == MSG_LEN){
+    if(cksum(message) == 0 && 
+       message[MSG_LEN - 1] == '\n'){
+      end_cursor = 0; // get ready for next msg
+      Serial.write(READY); 
+
       row = message[ROW_IDX];
       col = message[COL_IDX];
       cmd = message[CMD_IDX];
@@ -102,8 +109,8 @@ void interact(){
 	last_row = row;
 	tim.show();
       }
-      for(uint8_t i=0; i < N_LED_PER_MSG; i++){
-	for(uint8_t j=0; j < N_BYTE_PER_LED; j++){
+      for(i=0; i < N_LED_PER_MSG; i++){
+	for(j=0; j < N_BYTE_PER_LED; j++){
 	  buffer[(col + i) * N_BYTE_PER_LED + j] = 
 	    message[DAT_IDX + i * N_BYTE_PER_LED + j];
 	}
@@ -114,16 +121,34 @@ void interact(){
     }
     else{
       Serial.write(CKSUM_FAIL);
-      Serial.write(cksum(message));
-      // Serial.write(message, MSG_LEN);
+      // Serial.write(cksum(message));
+      // toss out first letter and resubmit
+      end_cursor = MSG_LEN - 1;
+      for(i = 0; i < MSG_LEN - 1; i++){
+	message[i] = message[i + 1];
+      }
     }
   }
 }
 
 uint8_t cksum(uint8_t *msg){
-  uint8_t val = 0;
-  for(uint8_t i=0; i < MSG_LEN; i++){
+  uint8_t i, val = 0;
+  for(i=0; i < MSG_LEN; i++){
     val += (i + 1) * (uint8_t)msg[i];
   }
+#ifdef NOT_DEF
+  if(val != 0){
+    val = 0;
+    for(i=0; i < MSG_LEN; i++){
+      val += (i + 1) * (uint8_t)msg[i];
+      Serial.print("    ");
+      Serial.print(i);
+      Serial.print(", ");
+      Serial.print(msg[i]);
+      Serial.print(",");
+      Serial.println(val);
+    }
+  }
+#endif
   return val;
 }

@@ -16,11 +16,22 @@ port = '/dev/ttyS0'
 
 s = serial.Serial(port, baudrate=115200, timeout=.01)
 
-while s.read(): ## clear the buffer
-    pass
+while 1:
+    dat = s.read(10000) ## clear the buffer
+    print dat
+    if not dat:
+        break
 NCOL = 16
 NROW = 8
 pixels = zeros((NCOL, NROW, 3), uint8)
+
+RED = [255, 0, 0]
+GREEN = [0, 255, 0]
+BLUE = [0, 0, 255]
+def setPix(row, col, color):
+    pixels[row, col] = color
+    update_pixels(pixels)
+
 last_msg = None
 N_BYTE_PER_LED = 3
 N_LED_PER_MSG = 16
@@ -102,16 +113,14 @@ def update_pixels(new_display):
                 cmd = CMD_SHOW
             else:
                 cmd = CMD_COPYONLY
-            alamode_response = s.read()
-            print alamode_response
-            if alamode_response == CKSUM_FAIL and False:
-                print '"%s"' % last_msg
-                print s.read(MSG_LEN);
-            while alamode_response != READY:
-                alamode_response = s.read()
-                pass
             last_msg = makeMSG(r, c, cmd=cmd)
             s.write(last_msg)
+            alamode_resp = s.read(1)
+            while alamode_resp != READY:
+                s.read(1000)
+                s.write(last_msg)
+                time.sleep(.1)
+                alamode_resp = s.read(1)
 
 def test_pattern(val):
     i = arange(8)
