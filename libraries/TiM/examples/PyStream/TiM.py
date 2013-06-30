@@ -13,7 +13,7 @@ CMD_COPYONLY = chr(0)
 CMD_SHOW = 'S'
 
 port = '/dev/ttyUSB0'
-port = '/dev/ttyS0'
+# port = '/dev/ttyS0'
 
 s = serial.Serial(port, baudrate=115200, timeout=.01)
 
