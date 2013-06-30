@@ -424,7 +424,7 @@ class Menu(object):
 def construct_nightmare(size):
     surf = Surface(size)
 
-    boxsize = 8
+    boxsize = 32
     bordersize = 1
     vals = '1235' # only the lower values, for darker colors and greater fear
     arr = pygame.PixelArray(surf)

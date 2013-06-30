@@ -13,13 +13,23 @@ CMD_SHOW = 'S'
 
 port = '/dev/ttyUSB0'
 port = '/dev/ttyS0'
+
 s = serial.Serial(port, baudrate=115200, timeout=.01)
 
-while s.read():
+while s.read(): ## clear the buffer
     pass
 NCOL = 16
 NROW = 8
 pixels = zeros((NCOL, NROW, 3), uint8)
+last_msg = None
+N_BYTE_PER_LED = 3
+N_LED_PER_MSG = 16
+MSG_LEN = (1                   + # CKSUM
+           N_BYTE_PER_LED * N_LED_PER_MSG + 
+           1                   + # ROW
+           1                   + # COL
+           1                   + # COMMAND
+           1);                   # carrage return
 
 def cksum(msg):
     n = len(msg)
@@ -55,7 +65,7 @@ col = 0
 BACKGROUND = array([15, 15, 20]) ## Just for MaTris
 
 def update_pixels(new_display):
-    global row, col, count
+    global row, col, count, last_msg
     ## for pylab
     new_display = new_display[::-1,::-1]
     
@@ -93,14 +103,20 @@ def update_pixels(new_display):
             else:
                 cmd = CMD_COPYONLY
             alamode_response = s.read()
+            print alamode_response
+            if alamode_response == CKSUM_FAIL and False:
+                print '"%s"' % last_msg
+                print s.read(MSG_LEN);
             while alamode_response != READY:
                 alamode_response = s.read()
                 pass
-            s.write(makeMSG(r, c, cmd=cmd))
+            last_msg = makeMSG(r, c, cmd=cmd)
+            s.write(last_msg)
 
 def test_pattern(val):
     i = arange(8)
     for XX in range(100):
+        print XX
         for j in range(8):
             px = zeros((NCOL, NROW, 3), uint8) 
             px[i + j, i] = val

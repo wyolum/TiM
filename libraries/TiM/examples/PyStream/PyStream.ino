@@ -90,36 +90,40 @@ void interact(){
   while((millis() - start < TIMEOUT_MS) && 
 	(Serial.available() < MSG_LEN)){ // wait for complete message
   }
-  for(uint8_t i=0; i < MSG_LEN; i++){
-    message[i] = Serial.read();
-  }
-  if(cksum(message)){
-    row = message[ROW_IDX];
-    col = message[COL_IDX];
-    cmd = message[CMD_IDX];
-    if(row != last_row){
-      last_row = row;
-      tim.show();
+  if(Serial.available() >= MSG_LEN){
+    for(uint8_t i=0; i < MSG_LEN; i++){
+      message[i] = Serial.read();
     }
-    for(uint8_t i=0; i < N_LED_PER_MSG; i++){
-      for(uint8_t j=0; j < N_BYTE_PER_LED; j++){
-	buffer[(col + i) * N_BYTE_PER_LED + j] = 
-	  message[DAT_IDX + i * N_BYTE_PER_LED + j];
+    if(cksum(message) != 0){
+      row = message[ROW_IDX];
+      col = message[COL_IDX];
+      cmd = message[CMD_IDX];
+      if(row != last_row){
+	last_row = row;
+	tim.show();
       }
+      for(uint8_t i=0; i < N_LED_PER_MSG; i++){
+	for(uint8_t j=0; j < N_BYTE_PER_LED; j++){
+	  buffer[(col + i) * N_BYTE_PER_LED + j] = 
+	    message[DAT_IDX + i * N_BYTE_PER_LED + j];
+	}
+      }
+      tim.strips[row].changed = true;
+      tim.show();
+      //if(cmd == CMD_SHOW) tim.show();
     }
-    tim.strips[row].changed = true;
-    tim.show();
-    //if(cmd == CMD_SHOW) tim.show();
-  }
-  else{
-    Serial.write(CKSUM_FAIL);
+    else{
+      Serial.write(CKSUM_FAIL);
+      Serial.write(cksum(message));
+      // Serial.write(message, MSG_LEN);
+    }
   }
 }
 
-bool cksum(uint8_t *msg){
+uint8_t cksum(uint8_t *msg){
   uint8_t val = 0;
   for(uint8_t i=0; i < MSG_LEN; i++){
-    val += (i + 1) * msg[i];
+    val += (i + 1) * (uint8_t)msg[i];
   }
-  return val == 0;
+  return val;
 }
