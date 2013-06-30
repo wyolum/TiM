@@ -278,30 +278,6 @@ def hs_file():
         return('hsys')
 
 
-def get_current_high_score(g):
-    f = open(hs_file())
-    current_hs = f.readline().split()
-    f.close()
-    return current_hs
-
-
-def check_high_score(g):
-    g.check_hs = True
-    f = open(hs_file())
-    current_hs = int(f.readline().split()[1])
-    f.close()
-    if g.score > current_hs:
-        #print_new_hs1(g)
-        player = hs_get_name(g)
-        f = open(hs_file(), 'w')
-        f.write('%s %d' % (player, g.score))
-        f.close()
-        g.current_hs = get_current_high_score(g)
-        return 1
-    else:
-        return 2
-
-
 def event_get_key():
     while True:
         for event in pygame.event.get():
@@ -342,14 +318,6 @@ def hs_get_name(g):
 #------------------------------------------------------------------------------
 
 def print_input_box(g, inp_text):
-    top_text = ' New High Score: %d! ' % g.score
-    
-    topFont = pygame.font.SysFont("Verdana", 40, True, False)
-    topText = topFont.render(top_text, True, hue('WHITE'))
-    topRect = topText.get_rect()
-    topRect.centerx = g.scrRect.centerx
-    topRect.centery = (g.scrRect.centery - 30)
-    g.screen.blit(topText, topRect)
     
     fontObject = pygame.font.SysFont("Verdana", 30, False, True)
     if len(inp_text) != 0:
@@ -364,17 +332,6 @@ def print_input_box(g, inp_text):
                       ((g.scrRect.centerx - 160), (topRect.bottom + 5)))
         
     pygame.display.flip()
-
-
-def print_current_hs(g):
-    text = 'High Score: %s %s ' % (g.current_hs[0], g.current_hs[1])
-    
-    reportFont = pygame.font.SysFont("Courier", 15, True, False)
-    dispText = reportFont.render(text, True, hue('WHITE'))
-    textRect = dispText.get_rect()
-    textRect.topleft = g.scrRect.topleft
-    
-    g.screen.blit(dispText, textRect)
 
 
 def print_score(g):
@@ -403,36 +360,6 @@ def print_mode_draw(g):
 def print_paused(g):
     top_text = ' Paused '
     bottom_text = ' Press [SPACE BAR] to Resume '
-    
-    topFont = pygame.font.SysFont("Verdana", 40, True, False)
-    topText = topFont.render(top_text, True, hue('WHITE'))
-    topRect = topText.get_rect()
-    topRect.centerx = g.scrRect.centerx
-    topRect.centery = (g.scrRect.centery - 30)
-    g.screen.blit(topText, topRect)
-
-    bottomFont = pygame.font.SysFont("Verdana", 30)
-    bottomText = bottomFont.render(bottom_text, True, hue('WHITE'))
-    bottomRect = bottomText.get_rect()
-    bottomRect.centerx = g.scrRect.centerx
-    bottomRect.y = (topRect.bottom + 5)
-    g.screen.blit(bottomText, bottomRect)
-
-
-def print_new_hs1(g):
-    top_text = ' New High Score: %d! ' % g.score
-    
-    topFont = pygame.font.SysFont("Verdana", 40, True, False)
-    topText = topFont.render(top_text, True, hue('WHITE'))
-    topRect = topText.get_rect()
-    topRect.centerx = g.scrRect.centerx
-    topRect.centery = (g.scrRect.centery - 30)
-    g.screen.blit(topText, topRect)
-
-
-def print_new_hs2(g):
-    top_text = ' New High Score: %d! ' % g.score
-    bottom_text = ' Press [F5] to Start Over '
     
     topFont = pygame.font.SysFont("Verdana", 40, True, False)
     topText = topFont.render(top_text, True, hue('WHITE'))

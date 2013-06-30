@@ -13,7 +13,7 @@ CMD_COPYONLY = chr(0)
 CMD_SHOW = 'S'
 
 port = '/dev/ttyUSB0'
-# port = '/dev/ttyS0'
+port = '/dev/ttyS0'
 
 s = serial.Serial(port, baudrate=115200, timeout=.01)
 
@@ -26,10 +26,6 @@ class Surface(pygame.Surface):
     def __init__(self, blocksize, *args, **kw):
         self.blocksize=blocksize
         super(Surface, self).__init__(*args, **kw)
-    def fill(self, *args, **kw):
-        super(Surface, self).fill(*args, **kw)
-    def blit(self, *args, **kw):
-        super(Surface, self).blit(*args, **kw)
     def flip(self):
         update_pixels(pygame.surfarray.pixels3d(self)
                       [self.blocksize//2::self.blocksize,

@@ -43,9 +43,10 @@ class Snake(object):
         self.SW = self.BLOCKSIZE * self.MATRIX_W
         self.SH = self.BLOCKSIZE * self.MATRIX_H
         #---
-        self.screen = pygame.display.set_mode((self.SW, self.SH))
-        self.scrRect = self.screen.get_rect()
-        self.background = TiM.Surface(self.BLOCKSIZE, (self.SW, self.SH))
+        self.SCREEN = pygame.display.set_mode((self.SW, self.SH))
+        self.scrRect = self.SCREEN.get_rect()
+        self.background = pygame.Surface(self.SCREEN.get_size())
+        self.screen = TiM.Surface(self.BLOCKSIZE, (self.SW, self.SH))
         #---
         self.caption = ("Yellow Snake - F5 to restart | SPACE to pause | "
         "F12 to draw")
@@ -72,8 +73,6 @@ class Snake(object):
         self.foodGroup = None
         #---
         self.you_lose = None
-        self.current_hs = None
-        self.check_hs = None
         #---
         self.start_over()
     
@@ -103,8 +102,6 @@ class Snake(object):
         self.foodGroup = None
         #---
         self.you_lose = False
-        self.current_hs = sfuncs.get_current_high_score(self)
-        self.check_hs = 0
         
         # Display caption and icon
         pygame.display.set_caption(self.caption)
@@ -165,7 +162,6 @@ def game_loop(g):
                 elif event.key == pygame.K_F12:
                     if g.mode == NORMAL:
                         g.mode = DRAW
-                        g.score = 0
                         if g.you_lose:
                             g.start_over()
                     else:
@@ -215,20 +211,10 @@ def game_loop(g):
         
         if g.mode == DRAW:
             sfuncs.print_mode_draw(g)
-        else:
-            sfuncs.print_current_hs(g)
-            sfuncs.print_score(g)
         
-        if g.you_lose:
-            if not g.check_hs:
-                g.check_hs = sfuncs.check_high_score(g)
-            elif g.check_hs == 1:
-                sfuncs.print_new_hs2(g)
-            elif g.check_hs == 2:
-                sfuncs.print_you_lose(g)
-                
-        
+        g.SCREEN.blit(g.screen, (0, 0))
         pygame.display.flip()
+        g.screen.flip()
 
 
 
