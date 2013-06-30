@@ -28,17 +28,17 @@ MATRIX_WIDTH = 8
 MATRIX_HEIGHT = 18
 VISIBLE_MATRIX_HEIGHT = MATRIX_HEIGHT - 2
 
-WIDTH = 700
+WIDTH = 400
 HEIGHT = MATRIX_HEIGHT*BLOCKSIZE + BORDERWIDTH*2 + MATRIS_OFFSET*2
-
 
 
 class Matris(object):
     def __init__(self, size=(MATRIX_WIDTH, MATRIX_HEIGHT), blocksize=BLOCKSIZE):
         self.size = {'width': size[0], 'height': size[1]}
         self.blocksize = blocksize
-        self.surface = Surface((self.size['width']  * self.blocksize,
-                                (self.size['height'] - 2) * self.blocksize))
+        self.surface = TiM.Surface(self.blocksize, 
+                                   (self.size['width']  * self.blocksize,
+                                    (self.size['height'] - 2) * self.blocksize))
         self.matrix = dict()
         for y in range(self.size['height']):
             for x in range(self.size['width']):
@@ -229,7 +229,7 @@ class Matris(object):
 
 
         if shadow:
-            end = [40] # end is the alpha value
+            end = [10] # end is the alpha value
         else:
             end = [] # Adding this to the end will not change the array, thus no alpha value
 
@@ -357,8 +357,7 @@ class Game(object):
             screen.blit(background, (0, 0))
 
             pygame.display.flip()
-            TiM.update_pixels(pygame.surfarray.pixels3d(self.matris.surface)[BLOCKSIZE//2::BLOCKSIZE,BLOCKSIZE//2::BLOCKSIZE].transpose((1, 0, 2)))
-
+            self.matris.surface.flip()
     def info_surf(self):
 
         textcolor = (255, 255, 255)

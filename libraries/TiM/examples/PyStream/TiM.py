@@ -1,3 +1,4 @@
+import pygame
 import PIL.Image as Image
 import time
 import serial
@@ -21,6 +22,20 @@ while 1:
     print dat
     if not dat:
         break
+class Surface(pygame.Surface):
+    def __init__(self, blocksize, *args, **kw):
+        self.blocksize=blocksize
+        super(Surface, self).__init__(*args, **kw)
+    def fill(self, *args, **kw):
+        super(Surface, self).fill(*args, **kw)
+    def blit(self, *args, **kw):
+        super(Surface, self).blit(*args, **kw)
+    def flip(self):
+        update_pixels(pygame.surfarray.pixels3d(self)
+                      [self.blocksize//2::self.blocksize,
+                       self.blocksize//2::self.blocksize]
+                      .transpose((1, 0, 2)))        
+
 NCOL = 16
 NROW = 8
 pixels = zeros((NCOL, NROW, 3), uint8)
