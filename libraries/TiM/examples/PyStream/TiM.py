@@ -37,10 +37,10 @@ NCOL = 16
 NROW = 8
 pixels = zeros((NCOL, NROW, 3), uint8)
 
-RED   = [255, 0, 0]
-GREEN = [0, 255, 0]
-BLUE  = [0, 0, 255]
-WHITE = [255, 255, 255]
+RED   = [100, 0, 0]
+GREEN = [0, 100, 0]
+BLUE  = [0, 0, 100]
+WHITE = [100, 100, 100]
 
 def setPix(row, col, color):
     pixels[row, col,:] = color
@@ -52,6 +52,39 @@ def fill(color):
     pixels += color
     update_pixels(pixels)
 
+def wheel(WheelPos, imax):
+    ''' 
+    Input a value 0 to 255 to get a color value.
+    The colours are a transition r - g - b - back to r.
+    '''
+    if(WheelPos < 85):
+        r = WheelPos * 3
+        g = 255 - WheelPos * 3
+        b = 0
+    elif(WheelPos < 170):
+        WheelPos -= 85
+        r = 255 - WheelPos * 3
+        g = 0
+        b = WheelPos * 3
+    else:
+        WheelPos -= 170
+        r = 0
+        g = WheelPos * 3
+        b = 255 - WheelPos * 3
+    r = r * imax / 255
+    g = g * imax / 255
+    b = b * imax / 255
+    return Color(r, g, b)
+
+def Color(r, g, b):
+    return array([g, r, b])
+
+def gradient(maxv):
+    for i in range(16):
+        for j in range(8):
+            d = sqrt(i ** 2 + j ** 2) / sqrt(256 + 64)
+            pixels[i, j] = wheel(256-d * 255, maxv)
+    update_pixels(pixels)
 
 last_msg = None
 N_BYTE_PER_LED = 3
