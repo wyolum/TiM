@@ -3,6 +3,7 @@ import PIL.Image as Image
 import time
 import serial
 from numpy import *
+import copy
 
 CKSUM_FAIL = 'F'
 READY = 'R'
@@ -36,12 +37,21 @@ NCOL = 16
 NROW = 8
 pixels = zeros((NCOL, NROW, 3), uint8)
 
-RED = [255, 0, 0]
+RED   = [255, 0, 0]
 GREEN = [0, 255, 0]
-BLUE = [0, 0, 255]
+BLUE  = [0, 0, 255]
+WHITE = [255, 255, 255]
+
 def setPix(row, col, color):
-    pixels[row, col] = color
+    pixels[row, col,:] = color
+    s.write(makeMSG(row, 0, cmd=CMD_COPYONLY))
+
+def fill(color):
+    global pixels
+    pixels *= 0
+    pixels += color
     update_pixels(pixels)
+
 
 last_msg = None
 N_BYTE_PER_LED = 3
