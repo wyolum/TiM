@@ -4,6 +4,7 @@ import time
 import serial
 from numpy import *
 import copy
+import os
 
 CKSUM_FAIL = 'F'
 READY = 'R'
@@ -13,8 +14,14 @@ SWAP_12 = False
 CMD_COPYONLY = chr(0)
 CMD_SHOW = 'S'
 
-port = '/dev/ttyUSB0'
-port = '/dev/ttyS0'
+if os.uname()[1] == 'raspberrypi':
+    port = '/dev/ttyS0'
+    SYS = 'PI'
+    N_READ = 1
+else:
+    port = '/dev/ttyUSB0'
+    SYS = 'FTDI'
+    N_READ = 2
 
 s = serial.Serial(port, baudrate=115200, timeout=.01)
 
@@ -169,12 +176,13 @@ def update_pixels(new_display):
                 cmd = CMD_COPYONLY
             last_msg = makeMSG(r, c, cmd=cmd)
             s.write(last_msg)
-            alamode_resp = s.read(1)
-            while alamode_resp != READY:
-                s.read(1000)
-                s.write(last_msg)
-                time.sleep(.1)
-                alamode_resp = s.read(1)
+            alamode_resp = s.read(N_READ).strip()
+            if alamode_resp:
+                while alamode_resp[0] != READY:
+                    s.read(1000)
+                    s.write(last_msg)
+                    time.sleep(.1)
+                    alamode_resp = s.read(N_READ).strip()
 
 def test_pattern(val):
     i = arange(8)

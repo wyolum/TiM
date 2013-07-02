@@ -14,7 +14,7 @@ class Dummy():
         return 'R' * n
     def write(self, *args, **kw):
         pass
-s = serial.Serial('/dev/ttyUSB1', baudrate=115200, timeout=.01)
+s = serial.Serial('/dev/ttyUSB0', baudrate=115200, timeout=.01)
 # s = Dummy()
 
 pixels = ones((64, 8, 3), uint8)
