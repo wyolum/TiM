@@ -53,6 +53,23 @@ def setPix(row, col, color):
     pixels[row, col,:] = color
     s.write(makeMSG(row, 0, cmd=CMD_COPYONLY))
 
+scale = array([[1, 1, 1, 1, 1, 2, 1, 1],
+               [1, 1, 1, 1, 2, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1, 2],
+               [1, 1, 1, 1, 1, 1, 2, 2],
+               [1, 1, 2, 1, 2, 1, 1, 1],
+               [1, 1, 1, 1, 2, 1, 2, 2],
+               [1, 1, 1, 1, 1.25, 1, 2, 1],
+               [1, 1, 2, 1, 1.25, 2, 2, 2],
+               [1, 1, 1, 2, 1, 2, 1, 1],
+               [1, 1, 1, 1, 1, 2, 1, 2],
+               [1, 1, 2, 1, 2, 2, 1, 2],
+               [1, 1, 2, 1, 2, 2, 2, 2],
+               [1, 1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 2, 2, 2, 2, 1, 1],
+               [2, 2, 2, 2, 2, 2, 2, 2]])
+
 def fill(color):
     global pixels
     pixels *= 0
@@ -86,12 +103,28 @@ def wheel(WheelPos, imax):
 def Color(r, g, b):
     return array([g, r, b])
 
-def gradient(maxv):
+def gradient(maxv, center=(0,0)):
     for i in range(16):
         for j in range(8):
-            d = sqrt(i ** 2 + j ** 2) / sqrt(256 + 64)
-            pixels[i, j] = wheel(256-d * 255, maxv)
+            d = sqrt((i - center[0] % 16) ** 2 + 
+                     (j - center[1] % 8) ** 2) / sqrt(256 + 64)
+            pixels[i, j] = wheel(d * 255, maxv)
     update_pixels(pixels)
+def one_at_a_time():
+    i = 8
+    j = 4
+    while 1:
+        if random.random() > .5:
+            j += 1
+        else:
+            j -= 1
+        if random.random() > .5:
+            i += 1
+        else:
+            i -= i
+        i %= 8
+        j %= 16
+        gradient(100, (i, j))
 
 last_msg = None
 N_BYTE_PER_LED = 3
@@ -139,6 +172,8 @@ BACKGROUND = array([15, 15, 20]) ## Just for MaTris
 def update_pixels(new_display):
     global row, col, count, last_msg
     ## for pylab
+    # new_display[:,:,:] = new_display * scale[:,:,newaxis]
+    # new_display[:,:,:] = new_display.astype(uint8)
     new_display = new_display[::-1,::-1]
     
     display = new_display
@@ -166,7 +201,6 @@ def update_pixels(new_display):
         tmp = array(pixels[:,:,1], copy=True)
         pixels[:,:,1] = pixels[:,:,2]
         pixels[:,:,2] = tmp
-
 
     for r in range(8):
         for c in range(0, NCOL, 16):
