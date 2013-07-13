@@ -19,7 +19,12 @@ if os.uname()[1] == 'raspberrypi':
     SYS = 'PI'
     N_READ = 1
 else:
-    port = '/dev/ttyUSB0'
+    if os.path.exists('/dev/ttyUSB0'):
+        port = '/dev/ttyUSB0'
+    elif os.path.exists('/dev/ttyACM0'):
+        port = '/dev/ttyACM0'
+    else:
+        port = raw_input('enter serial port:')
     SYS = 'FTDI'
     N_READ = 2
 
@@ -168,12 +173,23 @@ count = 0
 row = 0
 col = 0
 BACKGROUND = array([15, 15, 20]) ## Just for MaTris
+# COLOR_ADJUST = diag([1, 1, 1]) ## no adjust
+COLOR_ADJUST = diag([1, .01, .01]) ## cut blue and green by 2
+
+def setColorAdjust(r, g, b):
+    global COLOR_ADJUST
+    COLOR_ADJUST *= 0
+    COLOR_ADJUST[0, 0] = r
+    COLOR_ADJUST[1, 1] = g
+    COLOR_ADJUST[2, 2] = b
 
 def update_pixels(new_display):
     global row, col, count, last_msg
+
     ## for pylab
     # new_display[:,:,:] = new_display * scale[:,:,newaxis]
     # new_display[:,:,:] = new_display.astype(uint8)
+    new_display = dot(new_display, COLOR_ADJUST).astype(uint8)
     new_display = new_display[::-1,::-1]
     
     display = new_display
