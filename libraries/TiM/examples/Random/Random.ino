@@ -7,8 +7,8 @@ uint8_t pins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
 // uint8_t pins[8] = {0,1,2, 3, 4, 5, 6, 7};
 const uint16_t n_led_per_row = 32;
 
-const uint8_t N_ROW = 32;
-const uint8_t N_COL = 8;
+const uint8_t N_ROW = 8;
+const uint8_t N_COL = 32;
 const uint8_t BRIGHT = 255;
 const uint8_t N_LED_PER_STEP = 20;
 
