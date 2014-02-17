@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------
-  
+Library to control TiM.  
   --------------------------------------------------------------------*/
 
 #include "TiM.h"
@@ -52,6 +52,11 @@ void TiM::setrow(uint8_t row, uint32_t c){
     strips[row].setPixelColor(led_j, c);
   }
 }
+
+void TiM::setRow(uint8_t row, uint8_t * pixels) {
+  strips[row].setRow(pixels);
+}
+
 void TiM::setall(uint32_t c){
   uint16_t strip_i;
   for(strip_i = 0; strip_i < n_strip; strip_i++){
@@ -99,5 +104,13 @@ uint32_t Wheel(byte WheelPos, uint8_t imax) {
   g = g * imax / 255;
   b = b * imax / 255;
   return Color(r, g, b);
+}
+
+void TiM::copyRow(uint8_t to,uint8_t from) {
+  strips[to].setRow(strips[from].getRow());  // Assumes rows of equal size
+}
+
+void TiM::clearRow(uint8_t row) {
+  strips[row].clearRow();
 }
 
