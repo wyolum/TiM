@@ -3,7 +3,7 @@
 #include <SD.h>
 
 const uint8_t n_strip = 8;
-const uint16_t n_led_per_strip = 64;
+const uint16_t n_led_per_strip = 16;
 const uint8_t n_byte_per_led = 3;
 const uint16_t n_byte_per_strip = n_led_per_strip * n_byte_per_led;
 uint8_t buffer[n_byte_per_strip];
@@ -16,6 +16,7 @@ File display_file;
 const uint8_t SCREEN_WIDTH = 33;
 const uint8_t UNIFONT_RECLEN = 33;
 uint8_t unifont_data[UNIFONT_RECLEN - 1];
+int count = 0;
 
 // Use Arduino Pins 2-9 for controling the strips of TiM
 uint8_t pins[8] = {2, 3, 4, 5, 6, 7, 8, 9};
@@ -54,7 +55,8 @@ void xy2tim(uint8_t x, uint8_t y, uint16_t *row_p, uint16_t *col_p){
 }
 
 void SD_show(){
-  Serial.println("SD_show()");
+  Serial.print("SD_show() ");
+  Serial.println(count);
   display_file.seek(0);
   
   for(uint8_t i = 0; i < n_strip; i++){
@@ -93,6 +95,9 @@ void setup(){
   }
 
   unifont_file = SD.open("UNIFONT.WFF");
+  if(!unifont_file){
+    Serial.println("No unifont file present");
+  }
   display_file = SD.open("_.DSP", FILE_WRITE);
 
   // initialize display file
@@ -105,7 +110,7 @@ void setup(){
   }
   // SD_show(); // only first show works??
 }
-int count = 0;
+
 void loop(){
   uint8_t r, g, b, brightness=20;
   uint16_t row, col;
@@ -115,7 +120,7 @@ void loop(){
     for(int x = 0; x < 32; x++){
       // convert pysical x,y coords to TiM electrical row, col coords
       xy2tim(x, y, &row, &col);
-      SD_setPixel(x, y, Color(x * count, y * count, 5));
+      SD_setPixel(x, y, Color(x * count, y * count, 5*count));
     }
   }
   SD_show();
