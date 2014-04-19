@@ -1,0 +1,2460 @@
+# EESchema Netlist Version 1.1 created  2/16/2013 2:33:32 PM
+(
+ ( /511688A7/5118AB57 c_0805 C101 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118ABAF c_0805 C102 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB4E c_0805 C103 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB46 c_0805 C104 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB43 c_0805 C105 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB3D c_0805 C106 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB36 c_0805 C107 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB2F c_0805 C108 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB28 c_0805 C109 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118ABA8 c_0805 C110 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118ABA4 c_0805 C111 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB1D c_0805 C112 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB9B c_0805 C113 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB93 c_0805 C114 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB1A c_0805 C115 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB0F c_0805 C116 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511688A7/5118AB5E c_2917 C117 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /51178F3E/5118AB58 c_0805 C201 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118ABB0 c_0805 C202 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB51 c_0805 C203 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB49 c_0805 C204 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5116895D c_0805 C205 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB3A c_0805 C206 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB32 c_0805 C207 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB2A c_0805 C208 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB23 c_0805 C209 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118ABAA c_0805 C210 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118ABA6 c_0805 C211 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB22 c_0805 C212 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB9E c_0805 C213 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB96 c_0805 C214 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB1B c_0805 C215 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB0E c_0805 C216 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51178F3E/5118AB5B c_2917 C217 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /51179283/5118AB54 c_0805 C301 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118ABB2 c_0805 C302 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB52 c_0805 C303 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB4B c_0805 C304 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB3F c_0805 C305 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5116895C c_0805 C306 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB34 c_0805 C307 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB2C c_0805 C308 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB27 c_0805 C309 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118ABAD c_0805 C310 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118ABA3 c_0805 C311 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB21 c_0805 C312 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/51189839 c_0805 C313 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB99 c_0805 C314 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB16 c_0805 C315 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB12 c_0805 C316 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179283/5118AB5D c_2917 C317 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /51179344/5118AB59 c_0805 C401 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/51189844 c_0805 C402 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB53 c_0805 C403 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB4A c_0805 C404 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB45 c_0805 C405 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB39 c_0805 C406 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB35 c_0805 C407 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB2B c_0805 C408 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB26 c_0805 C409 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118ABA9 c_0805 C410 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118ABA5 c_0805 C411 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB1C c_0805 C412 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB9A c_0805 C413 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB97 c_0805 C414 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/51168953 c_0805 C415 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB13 c_0805 C416 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179344/5118AB5C c_2917 C417 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /51179413/5118AB5A c_0805 C501 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118ABB5 c_0805 C502 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5116895F c_0805 C503 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5116895E c_0805 C504 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB41 c_0805 C505 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB38 c_0805 C506 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB33 c_0805 C507 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB2D c_0805 C508 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB25 c_0805 C509 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118983C c_0805 C510 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118ABA1 c_0805 C511 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB1F c_0805 C512 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB9C c_0805 C513 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB98 c_0805 C514 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB19 c_0805 C515 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/5118AB10 c_0805 C516 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /51179413/51189821 c_2917 C517 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /511794A8/5118AB55 c_0805 C601 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118ABB4 c_0805 C602 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB4F c_0805 C603 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB48 c_0805 C604 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB44 c_0805 C605 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB3B c_0805 C606 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5116895B c_0805 C607 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5116895A c_0805 C608 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/51168959 c_0805 C609 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118ABAB c_0805 C610 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118983B c_0805 C611 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB20 c_0805 C612 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118ABA0 c_0805 C613 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/51189838 c_0805 C614 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB18 c_0805 C615 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB11 c_0805 C616 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /511794A8/5118AB5F c_2917 C617 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /5117954B/5118AB56 c_0805 C701 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118ABB1 c_0805 C702 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB4D c_0805 C703 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB47 c_0805 C704 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB40 c_0805 C705 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB3C c_0805 C706 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB37 c_0805 C707 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB30 c_0805 C708 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB24 c_0805 C709 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118ABAE c_0805 C710 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118ABA7 c_0805 C711 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/51168956 c_0805 C712 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB9D c_0805 C713 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB94 c_0805 C714 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB15 c_0805 C715 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB14 c_0805 C716 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117954B/5118AB60 c_2917 C717 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /5117961B/51168961 c_0805 C801 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118ABB3 c_0805 C802 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB50 c_0805 C803 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB4C c_0805 C804 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB42 c_0805 C805 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB3E c_0805 C806 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB31 c_0805 C807 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB2E c_0805 C808 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB29 c_0805 C809 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118ABAC c_0805 C810 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118ABA2 c_0805 C811 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB1E c_0805 C812 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB9F c_0805 C813 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB95 c_0805 C814 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB17 c_0805 C815 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/51168952 c_0805 C816 100n
+  ( 1 GND )
+  ( 2 5V )
+ )
+ ( /5117961B/5118AB61 c_2917 C817 47u,8V
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /511CD9F8 OSHW_6mm L101 OSHW
+  ( 1 ? )
+ )
+ ( /511CD9F5 Logo-WL3 L102 Wyolum
+  ( 1 ? )
+ )
+ ( /5117DB74 SIL-PWR-2 P101 PWR_NW
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /511895FA CONN_S P102 DO_N1
+  ( 1 /Row_A/DO_A )
+  ( 2 /Row_B/DO_B )
+  ( 3 /Row_C/DO_C )
+  ( 4 /Row_D/DO_D )
+ )
+ ( /51189605 CONN_S P103 DO_N2
+  ( 1 /Row_E/DO_E )
+  ( 2 /Row_F/DO_F )
+  ( 3 /Row_G/DO_G )
+  ( 4 /Row_H/DO_H )
+ )
+ ( /51189609 CONN_N P104 DI_N1
+  ( 1 /Row_D/DI_D )
+  ( 2 /Row_C/DI_C )
+  ( 3 /Row_B/DI_B )
+  ( 4 /Row_A/DI_A )
+ )
+ ( /5118960C CONN_N P105 DI_N2
+  ( 1 /Row_H/DI_H )
+  ( 2 /Row_G/DI_G )
+  ( 3 /Row_F/DI_F )
+  ( 4 /Row_E/DI_E )
+ )
+ ( /5117DB92 SIL-PWR-2 P106 PWR_NE
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /5117DBB4 SIL-PWR P107 PWR_W
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /5117DBCC SIL-PWR-2 P108 PWR_E
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /5118967E CONN_N P109 DI_W2
+  ( 1 /Row_H/DI_H )
+  ( 2 /Row_G/DI_G )
+  ( 3 /Row_F/DI_F )
+  ( 4 /Row_E/DI_E )
+ )
+ ( /51189707 CONN_S P110 DO_E2
+  ( 1 /Row_H/DO_H )
+  ( 2 /Row_G/DO_G )
+  ( 3 /Row_F/DO_F )
+  ( 4 /Row_E/DO_E )
+ )
+ ( /51189670 CONN_N P111 DI_W1
+  ( 1 /Row_D/DI_D )
+  ( 2 /Row_C/DI_C )
+  ( 3 /Row_B/DI_B )
+  ( 4 /Row_A/DI_A )
+ )
+ ( /511896FC CONN_S P112 DO_E1
+  ( 1 /Row_D/DO_D )
+  ( 2 /Row_C/DO_C )
+  ( 3 /Row_B/DO_B )
+  ( 4 /Row_A/DO_A )
+ )
+ ( /5117DADB SIL-PWR P113 PWR_SW
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /511897AE CONN_N P114 DI_S1
+  ( 1 /Row_A/DI_A )
+  ( 2 /Row_B/DI_B )
+  ( 3 /Row_C/DI_C )
+  ( 4 /Row_D/DI_D )
+ )
+ ( /511897BC CONN_N P115 DI_S2
+  ( 1 /Row_E/DI_E )
+  ( 2 /Row_F/DI_F )
+  ( 3 /Row_G/DI_G )
+  ( 4 /Row_H/DI_H )
+ )
+ ( /511897BE CONN_S P116 DO_S1
+  ( 1 /Row_D/DO_D )
+  ( 2 /Row_C/DO_C )
+  ( 3 /Row_B/DO_B )
+  ( 4 /Row_A/DO_A )
+ )
+ ( /511897C0 CONN_S P117 DO_S2
+  ( 1 /Row_H/DO_H )
+  ( 2 /Row_G/DO_G )
+  ( 3 /Row_F/DO_F )
+  ( 4 /Row_E/DO_E )
+ )
+ ( /5117DB48 SIL-PWR P118 PWR_SE
+  ( 1 5V )
+  ( 2 GND )
+ )
+ ( /511F175B SIL-PWR-2 P119 DO_H_SER
+  ( 1 /Row_H/DO_H )
+  ( 2 /Row_H/DO_H )
+ )
+ ( /511F1738 SIL-PWR-2 P120 DI_A_SER
+  ( 1 /Row_A/DI_A )
+  ( 2 /Row_A/DI_A )
+ )
+ ( /511F1A68 SIL-PWR P121 DI_A_SER
+  ( 1 /Row_A/DI_A )
+  ( 2 /Row_A/DI_A )
+ )
+ ( /511F1A88 SIL-PWR-2 P122 DO_H_SER
+  ( 1 /Row_H/DO_H )
+  ( 2 /Row_H/DO_H )
+ )
+ ( /511F1413 SIL-PWR P123 DI_A_Ser
+  ( 1 /Row_A/DI_A )
+  ( 2 /Row_A/DI_A )
+ )
+ ( /511F170C SIL-PWR P124 DO_H_Ser
+  ( 1 /Row_H/DO_H )
+  ( 2 /Row_H/DO_H )
+ )
+ ( /5118A74D ShortLink2 P125 G>H
+  ( 1 /Row_H/DI_H )
+  ( 2 /Row_G/DO_G )
+ )
+ ( /5118A740 ShortLink2 P126 F>G
+  ( 1 /Row_G/DI_G )
+  ( 2 /Row_F/DO_F )
+ )
+ ( /5118A737 ShortLink2 P127 E>F
+  ( 1 /Row_F/DI_F )
+  ( 2 /Row_E/DO_E )
+ )
+ ( /5118A72D ShortLink2 P128 D>E
+  ( 1 /Row_E/DI_E )
+  ( 2 /Row_D/DO_D )
+ )
+ ( /5118A723 ShortLink2 P129 C>D
+  ( 1 /Row_D/DI_D )
+  ( 2 /Row_C/DO_C )
+ )
+ ( /5118A719 ShortLink2 P130 B>C
+  ( 1 /Row_C/DI_C )
+  ( 2 /Row_B/DO_B )
+ )
+ ( /5118A707 ShortLink2 P131 A>B
+  ( 1 /Row_B/DI_B )
+  ( 2 /Row_A/DO_A )
+ )
+ ( /5118E269 PCB PCB101 CONN_1
+  ( 1 ? )
+ )
+ ( /511688A7/5118AB77 Screw S101 CONN_1
+  ( 1 ? )
+ )
+ ( /511688A7/5118AB75 Screw S102 CONN_1
+  ( 1 ? )
+ )
+ ( /511688A7/5118AB6E Screw S103 CONN_1
+  ( 1 ? )
+ )
+ ( /511688A7/5118AB63 Screw S104 CONN_1
+  ( 1 ? )
+ )
+ ( /51179344/5118AB7B Screw S401 CONN_1
+  ( 1 ? )
+ )
+ ( /51179344/5118AB76 Screw S402 CONN_1
+  ( 1 ? )
+ )
+ ( /51179344/5118AB6F Screw S403 CONN_1
+  ( 1 ? )
+ )
+ ( /51179344/5118AB65 Screw S404 CONN_1
+  ( 1 ? )
+ )
+ ( /51179413/51189825 Screw S501 CONN_1
+  ( 1 ? )
+ )
+ ( /51179413/51189824 Screw S502 CONN_1
+  ( 1 ? )
+ )
+ ( /51179413/5118AB6C Screw S503 CONN_1
+  ( 1 ? )
+ )
+ ( /51179413/5118AB68 Screw S504 CONN_1
+  ( 1 ? )
+ )
+ ( /5117961B/5118AB78 Screw S801 CONN_1
+  ( 1 ? )
+ )
+ ( /5117961B/5118AB70 Screw S802 CONN_1
+  ( 1 ? )
+ )
+ ( /5117961B/5118AB69 Screw S803 CONN_1
+  ( 1 ? )
+ )
+ ( /5117961B/5118AB66 Screw S804 CONN_1
+  ( 1 ? )
+ )
+ ( /511688A7/51189846 RGB_WS2811 U101 RGB_WS2811
+  ( 1 /Row_A/A_02 )
+  ( 2 /Row_A/DI_A )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AB0C RGB_WS2811 U102 RGB_WS2811
+  ( 1 /Row_A/A_03 )
+  ( 2 /Row_A/A_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AB00 RGB_WS2811 U103 RGB_WS2811
+  ( 1 /Row_A/A_04 )
+  ( 2 /Row_A/A_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AB8D RGB_WS2811 U104 RGB_WS2811
+  ( 1 /Row_A/A_05 )
+  ( 2 /Row_A/A_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAFC RGB_WS2811 U105 RGB_WS2811
+  ( 1 /Row_A/A_06 )
+  ( 2 /Row_A/A_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAF2 RGB_WS2811 U106 RGB_WS2811
+  ( 1 /Row_A/A_07 )
+  ( 2 /Row_A/A_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAF0 RGB_WS2811 U107 RGB_WS2811
+  ( 1 /Row_A/A_08 )
+  ( 2 /Row_A/A_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAE5 RGB_WS2811 U108 RGB_WS2811
+  ( 1 /Row_A/A_09 )
+  ( 2 /Row_A/A_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAE3 RGB_WS2811 U109 RGB_WS2811
+  ( 1 /Row_A/A_10 )
+  ( 2 /Row_A/A_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AB8A RGB_WS2811 U110 RGB_WS2811
+  ( 1 /Row_A/A_11 )
+  ( 2 /Row_A/A_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AB7E RGB_WS2811 U111 RGB_WS2811
+  ( 1 /Row_A/A_12 )
+  ( 2 /Row_A/A_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAD9 RGB_WS2811 U112 RGB_WS2811
+  ( 1 /Row_A/A_13 )
+  ( 2 /Row_A/A_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/51168940 RGB_WS2811 U113 RGB_WS2811
+  ( 1 /Row_A/A_14 )
+  ( 2 /Row_A/A_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5116893F RGB_WS2811 U114 RGB_WS2811
+  ( 1 /Row_A/A_15 )
+  ( 2 /Row_A/A_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5116893E RGB_WS2811 U115 RGB_WS2811
+  ( 1 /Row_A/A_16 )
+  ( 2 /Row_A/A_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511688A7/5118AAC0 RGB_WS2811 U116 RGB_WS2811
+  ( 1 /Row_A/DO_A )
+  ( 2 /Row_A/A_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118ABBA RGB_WS2811 U201 RGB_WS2811
+  ( 1 /Row_B/B_02 )
+  ( 2 /Row_B/DI_B )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5116894B RGB_WS2811 U202 RGB_WS2811
+  ( 1 /Row_B/B_03 )
+  ( 2 /Row_B/B_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AB01 RGB_WS2811 U203 RGB_WS2811
+  ( 1 /Row_B/B_04 )
+  ( 2 /Row_B/B_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AB90 RGB_WS2811 U204 RGB_WS2811
+  ( 1 /Row_B/B_05 )
+  ( 2 /Row_B/B_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAFB RGB_WS2811 U205 RGB_WS2811
+  ( 1 /Row_B/B_06 )
+  ( 2 /Row_B/B_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAF5 RGB_WS2811 U206 RGB_WS2811
+  ( 1 /Row_B/B_07 )
+  ( 2 /Row_B/B_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAEE RGB_WS2811 U207 RGB_WS2811
+  ( 1 /Row_B/B_08 )
+  ( 2 /Row_B/B_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAEA RGB_WS2811 U208 RGB_WS2811
+  ( 1 /Row_B/B_09 )
+  ( 2 /Row_B/B_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAE1 RGB_WS2811 U209 RGB_WS2811
+  ( 1 /Row_B/B_10 )
+  ( 2 /Row_B/B_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AB86 RGB_WS2811 U210 RGB_WS2811
+  ( 1 /Row_B/B_11 )
+  ( 2 /Row_B/B_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AB7F RGB_WS2811 U211 RGB_WS2811
+  ( 1 /Row_B/B_12 )
+  ( 2 /Row_B/B_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAD6 RGB_WS2811 U212 RGB_WS2811
+  ( 1 /Row_B/B_13 )
+  ( 2 /Row_B/B_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AACF RGB_WS2811 U213 RGB_WS2811
+  ( 1 /Row_B/B_14 )
+  ( 2 /Row_B/B_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AACA RGB_WS2811 U214 RGB_WS2811
+  ( 1 /Row_B/B_15 )
+  ( 2 /Row_B/B_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AAC3 RGB_WS2811 U215 RGB_WS2811
+  ( 1 /Row_B/B_16 )
+  ( 2 /Row_B/B_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51178F3E/5118AABD RGB_WS2811 U216 RGB_WS2811
+  ( 1 /Row_B/DO_B )
+  ( 2 /Row_B/B_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118ABB8 RGB_WS2811 U301 RGB_WS2811
+  ( 1 /Row_C/C_02 )
+  ( 2 /Row_C/DI_C )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AB08 RGB_WS2811 U302 RGB_WS2811
+  ( 1 /Row_C/C_03 )
+  ( 2 /Row_C/C_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AB02 RGB_WS2811 U303 RGB_WS2811
+  ( 1 /Row_C/C_04 )
+  ( 2 /Row_C/C_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AB91 RGB_WS2811 U304 RGB_WS2811
+  ( 1 /Row_C/C_05 )
+  ( 2 /Row_C/C_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AAFA RGB_WS2811 U305 RGB_WS2811
+  ( 1 /Row_C/C_06 )
+  ( 2 /Row_C/C_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AAF3 RGB_WS2811 U306 RGB_WS2811
+  ( 1 /Row_C/C_07 )
+  ( 2 /Row_C/C_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AAEB RGB_WS2811 U307 RGB_WS2811
+  ( 1 /Row_C/C_08 )
+  ( 2 /Row_C/C_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AAE4 RGB_WS2811 U308 RGB_WS2811
+  ( 1 /Row_C/C_09 )
+  ( 2 /Row_C/C_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/51168944 RGB_WS2811 U309 RGB_WS2811
+  ( 1 /Row_C/C_10 )
+  ( 2 /Row_C/C_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AB8B RGB_WS2811 U310 RGB_WS2811
+  ( 1 /Row_C/C_11 )
+  ( 2 /Row_C/C_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AB81 RGB_WS2811 U311 RGB_WS2811
+  ( 1 /Row_C/C_12 )
+  ( 2 /Row_C/C_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AADC RGB_WS2811 U312 RGB_WS2811
+  ( 1 /Row_C/C_13 )
+  ( 2 /Row_C/C_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AAD3 RGB_WS2811 U313 RGB_WS2811
+  ( 1 /Row_C/C_14 )
+  ( 2 /Row_C/C_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AACC RGB_WS2811 U314 RGB_WS2811
+  ( 1 /Row_C/C_15 )
+  ( 2 /Row_C/C_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AAC5 RGB_WS2811 U315 RGB_WS2811
+  ( 1 /Row_C/C_16 )
+  ( 2 /Row_C/C_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179283/5118AABE RGB_WS2811 U316 RGB_WS2811
+  ( 1 /Row_C/DO_C )
+  ( 2 /Row_C/C_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118ABBC RGB_WS2811 U401 RGB_WS2811
+  ( 1 /Row_D/D_02 )
+  ( 2 /Row_D/DI_D )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AB0D RGB_WS2811 U402 RGB_WS2811
+  ( 1 /Row_D/D_03 )
+  ( 2 /Row_D/D_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AB05 RGB_WS2811 U403 RGB_WS2811
+  ( 1 /Row_D/D_04 )
+  ( 2 /Row_D/D_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AB92 RGB_WS2811 U404 RGB_WS2811
+  ( 1 /Row_D/D_05 )
+  ( 2 /Row_D/D_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAF9 RGB_WS2811 U405 RGB_WS2811
+  ( 1 /Row_D/D_06 )
+  ( 2 /Row_D/D_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/51168947 RGB_WS2811 U406 RGB_WS2811
+  ( 1 /Row_D/D_07 )
+  ( 2 /Row_D/D_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAED RGB_WS2811 U407 RGB_WS2811
+  ( 1 /Row_D/D_08 )
+  ( 2 /Row_D/D_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAE7 RGB_WS2811 U408 RGB_WS2811
+  ( 1 /Row_D/D_09 )
+  ( 2 /Row_D/D_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAE2 RGB_WS2811 U409 RGB_WS2811
+  ( 1 /Row_D/D_10 )
+  ( 2 /Row_D/D_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AB87 RGB_WS2811 U410 RGB_WS2811
+  ( 1 /Row_D/D_11 )
+  ( 2 /Row_D/D_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118982C RGB_WS2811 U411 RGB_WS2811
+  ( 1 /Row_D/D_12 )
+  ( 2 /Row_D/D_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAD7 RGB_WS2811 U412 RGB_WS2811
+  ( 1 /Row_D/D_13 )
+  ( 2 /Row_D/D_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAD2 RGB_WS2811 U413 RGB_WS2811
+  ( 1 /Row_D/D_14 )
+  ( 2 /Row_D/D_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AACE RGB_WS2811 U414 RGB_WS2811
+  ( 1 /Row_D/D_15 )
+  ( 2 /Row_D/D_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AAC7 RGB_WS2811 U415 RGB_WS2811
+  ( 1 /Row_D/D_16 )
+  ( 2 /Row_D/D_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179344/5118AABB RGB_WS2811 U416 RGB_WS2811
+  ( 1 /Row_D/DO_D )
+  ( 2 /Row_D/D_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118ABB9 RGB_WS2811 U501 RGB_WS2811
+  ( 1 /Row_E/E_02 )
+  ( 2 /Row_E/DI_E )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AB0A RGB_WS2811 U502 RGB_WS2811
+  ( 1 /Row_E/E_03 )
+  ( 2 /Row_E/E_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5116894A RGB_WS2811 U503 RGB_WS2811
+  ( 1 /Row_E/E_04 )
+  ( 2 /Row_E/E_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/51189833 RGB_WS2811 U504 RGB_WS2811
+  ( 1 /Row_E/E_05 )
+  ( 2 /Row_E/E_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/51168948 RGB_WS2811 U505 RGB_WS2811
+  ( 1 /Row_E/E_06 )
+  ( 2 /Row_E/E_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AAF7 RGB_WS2811 U506 RGB_WS2811
+  ( 1 /Row_E/E_07 )
+  ( 2 /Row_E/E_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AAEC RGB_WS2811 U507 RGB_WS2811
+  ( 1 /Row_E/E_08 )
+  ( 2 /Row_E/E_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AAE9 RGB_WS2811 U508 RGB_WS2811
+  ( 1 /Row_E/E_09 )
+  ( 2 /Row_E/E_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AADE RGB_WS2811 U509 RGB_WS2811
+  ( 1 /Row_E/E_10 )
+  ( 2 /Row_E/E_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AB88 RGB_WS2811 U510 RGB_WS2811
+  ( 1 /Row_E/E_11 )
+  ( 2 /Row_E/E_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AB84 RGB_WS2811 U511 RGB_WS2811
+  ( 1 /Row_E/E_12 )
+  ( 2 /Row_E/E_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AADA RGB_WS2811 U512 RGB_WS2811
+  ( 1 /Row_E/E_13 )
+  ( 2 /Row_E/E_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AAD5 RGB_WS2811 U513 RGB_WS2811
+  ( 1 /Row_E/E_14 )
+  ( 2 /Row_E/E_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AACD RGB_WS2811 U514 RGB_WS2811
+  ( 1 /Row_E/E_15 )
+  ( 2 /Row_E/E_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AAC6 RGB_WS2811 U515 RGB_WS2811
+  ( 1 /Row_E/E_16 )
+  ( 2 /Row_E/E_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /51179413/5118AABA RGB_WS2811 U516 RGB_WS2811
+  ( 1 /Row_E/DO_E )
+  ( 2 /Row_E/E_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118ABB7 RGB_WS2811 U601 RGB_WS2811
+  ( 1 /Row_F/F_02 )
+  ( 2 /Row_F/DI_F )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AB0B RGB_WS2811 U602 RGB_WS2811
+  ( 1 /Row_F/F_03 )
+  ( 2 /Row_F/F_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AB06 RGB_WS2811 U603 RGB_WS2811
+  ( 1 /Row_F/F_04 )
+  ( 2 /Row_F/F_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AB8C RGB_WS2811 U604 RGB_WS2811
+  ( 1 /Row_F/F_05 )
+  ( 2 /Row_F/F_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AAFE RGB_WS2811 U605 RGB_WS2811
+  ( 1 /Row_F/F_06 )
+  ( 2 /Row_F/F_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AAF6 RGB_WS2811 U606 RGB_WS2811
+  ( 1 /Row_F/F_07 )
+  ( 2 /Row_F/F_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/51168946 RGB_WS2811 U607 RGB_WS2811
+  ( 1 /Row_F/F_08 )
+  ( 2 /Row_F/F_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/51168945 RGB_WS2811 U608 RGB_WS2811
+  ( 1 /Row_F/F_09 )
+  ( 2 /Row_F/F_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AADD RGB_WS2811 U609 RGB_WS2811
+  ( 1 /Row_F/F_10 )
+  ( 2 /Row_F/F_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AB89 RGB_WS2811 U610 RGB_WS2811
+  ( 1 /Row_F/F_11 )
+  ( 2 /Row_F/F_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AB80 RGB_WS2811 U611 RGB_WS2811
+  ( 1 /Row_F/F_12 )
+  ( 2 /Row_F/F_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/51168941 RGB_WS2811 U612 RGB_WS2811
+  ( 1 /Row_F/F_13 )
+  ( 2 /Row_F/F_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AAD1 RGB_WS2811 U613 RGB_WS2811
+  ( 1 /Row_F/F_14 )
+  ( 2 /Row_F/F_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AAC8 RGB_WS2811 U614 RGB_WS2811
+  ( 1 /Row_F/F_15 )
+  ( 2 /Row_F/F_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AAC4 RGB_WS2811 U615 RGB_WS2811
+  ( 1 /Row_F/F_16 )
+  ( 2 /Row_F/F_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /511794A8/5118AABF RGB_WS2811 U616 RGB_WS2811
+  ( 1 /Row_F/DO_F )
+  ( 2 /Row_F/F_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118ABB6 RGB_WS2811 U701 RGB_WS2811
+  ( 1 /Row_G/G_02 )
+  ( 2 /Row_G/DI_G )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AB07 RGB_WS2811 U702 RGB_WS2811
+  ( 1 /Row_G/G_03 )
+  ( 2 /Row_G/G_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AB04 RGB_WS2811 U703 RGB_WS2811
+  ( 1 /Row_G/G_04 )
+  ( 2 /Row_G/G_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AB8E RGB_WS2811 U704 RGB_WS2811
+  ( 1 /Row_G/G_05 )
+  ( 2 /Row_G/G_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AAFD RGB_WS2811 U705 RGB_WS2811
+  ( 1 /Row_G/G_06 )
+  ( 2 /Row_G/G_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AAF4 RGB_WS2811 U706 RGB_WS2811
+  ( 1 /Row_G/G_07 )
+  ( 2 /Row_G/G_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AAEF RGB_WS2811 U707 RGB_WS2811
+  ( 1 /Row_G/G_08 )
+  ( 2 /Row_G/G_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AAE8 RGB_WS2811 U708 RGB_WS2811
+  ( 1 /Row_G/G_09 )
+  ( 2 /Row_G/G_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AADF RGB_WS2811 U709 RGB_WS2811
+  ( 1 /Row_G/G_10 )
+  ( 2 /Row_G/G_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AB85 RGB_WS2811 U710 RGB_WS2811
+  ( 1 /Row_G/G_11 )
+  ( 2 /Row_G/G_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AB82 RGB_WS2811 U711 RGB_WS2811
+  ( 1 /Row_G/G_12 )
+  ( 2 /Row_G/G_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AADB RGB_WS2811 U712 RGB_WS2811
+  ( 1 /Row_G/G_13 )
+  ( 2 /Row_G/G_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AAD0 RGB_WS2811 U713 RGB_WS2811
+  ( 1 /Row_G/G_14 )
+  ( 2 /Row_G/G_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AACB RGB_WS2811 U714 RGB_WS2811
+  ( 1 /Row_G/G_15 )
+  ( 2 /Row_G/G_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AAC2 RGB_WS2811 U715 RGB_WS2811
+  ( 1 /Row_G/G_16 )
+  ( 2 /Row_G/G_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117954B/5118AABC RGB_WS2811 U716 RGB_WS2811
+  ( 1 /Row_G/DO_G )
+  ( 2 /Row_G/G_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118ABBB RGB_WS2811 U801 RGB_WS2811
+  ( 1 /Row_H/H_02 )
+  ( 2 /Row_H/DI_H )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AB09 RGB_WS2811 U802 RGB_WS2811
+  ( 1 /Row_H/H_03 )
+  ( 2 /Row_H/H_02 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AB03 RGB_WS2811 U803 RGB_WS2811
+  ( 1 /Row_H/H_04 )
+  ( 2 /Row_H/H_03 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AB8F RGB_WS2811 U804 RGB_WS2811
+  ( 1 /Row_H/H_05 )
+  ( 2 /Row_H/H_04 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAFF RGB_WS2811 U805 RGB_WS2811
+  ( 1 /Row_H/H_06 )
+  ( 2 /Row_H/H_05 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAF8 RGB_WS2811 U806 RGB_WS2811
+  ( 1 /Row_H/H_07 )
+  ( 2 /Row_H/H_06 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAF1 RGB_WS2811 U807 RGB_WS2811
+  ( 1 /Row_H/H_08 )
+  ( 2 /Row_H/H_07 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAE6 RGB_WS2811 U808 RGB_WS2811
+  ( 1 /Row_H/H_09 )
+  ( 2 /Row_H/H_08 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAE0 RGB_WS2811 U809 RGB_WS2811
+  ( 1 /Row_H/H_10 )
+  ( 2 /Row_H/H_09 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118982D RGB_WS2811 U810 RGB_WS2811
+  ( 1 /Row_H/H_11 )
+  ( 2 /Row_H/H_10 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AB83 RGB_WS2811 U811 RGB_WS2811
+  ( 1 /Row_H/H_12 )
+  ( 2 /Row_H/H_11 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAD8 RGB_WS2811 U812 RGB_WS2811
+  ( 1 /Row_H/H_13 )
+  ( 2 /Row_H/H_12 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAD4 RGB_WS2811 U813 RGB_WS2811
+  ( 1 /Row_H/H_14 )
+  ( 2 /Row_H/H_13 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAC9 RGB_WS2811 U814 RGB_WS2811
+  ( 1 /Row_H/H_15 )
+  ( 2 /Row_H/H_14 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5118AAC1 RGB_WS2811 U815 RGB_WS2811
+  ( 1 /Row_H/H_16 )
+  ( 2 /Row_H/H_15 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+ ( /5117961B/5116893D RGB_WS2811 U816 RGB_WS2811
+  ( 1 /Row_H/DO_H )
+  ( 2 /Row_H/H_16 )
+  ( 3 5V )
+  ( 4 ? )
+  ( 5 5V )
+  ( 6 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C101
+ SM*
+ C?
+ C1-1
+$endlist
+$component C102
+ SM*
+ C?
+ C1-1
+$endlist
+$component C103
+ SM*
+ C?
+ C1-1
+$endlist
+$component C104
+ SM*
+ C?
+ C1-1
+$endlist
+$component C105
+ SM*
+ C?
+ C1-1
+$endlist
+$component C106
+ SM*
+ C?
+ C1-1
+$endlist
+$component C107
+ SM*
+ C?
+ C1-1
+$endlist
+$component C108
+ SM*
+ C?
+ C1-1
+$endlist
+$component C109
+ SM*
+ C?
+ C1-1
+$endlist
+$component C110
+ SM*
+ C?
+ C1-1
+$endlist
+$component C111
+ SM*
+ C?
+ C1-1
+$endlist
+$component C112
+ SM*
+ C?
+ C1-1
+$endlist
+$component C113
+ SM*
+ C?
+ C1-1
+$endlist
+$component C114
+ SM*
+ C?
+ C1-1
+$endlist
+$component C115
+ SM*
+ C?
+ C1-1
+$endlist
+$component C116
+ SM*
+ C?
+ C1-1
+$endlist
+$component C117
+ SM*
+ C?
+ C1-1
+$endlist
+$component C201
+ SM*
+ C?
+ C1-1
+$endlist
+$component C202
+ SM*
+ C?
+ C1-1
+$endlist
+$component C203
+ SM*
+ C?
+ C1-1
+$endlist
+$component C204
+ SM*
+ C?
+ C1-1
+$endlist
+$component C205
+ SM*
+ C?
+ C1-1
+$endlist
+$component C206
+ SM*
+ C?
+ C1-1
+$endlist
+$component C207
+ SM*
+ C?
+ C1-1
+$endlist
+$component C208
+ SM*
+ C?
+ C1-1
+$endlist
+$component C209
+ SM*
+ C?
+ C1-1
+$endlist
+$component C210
+ SM*
+ C?
+ C1-1
+$endlist
+$component C211
+ SM*
+ C?
+ C1-1
+$endlist
+$component C212
+ SM*
+ C?
+ C1-1
+$endlist
+$component C213
+ SM*
+ C?
+ C1-1
+$endlist
+$component C214
+ SM*
+ C?
+ C1-1
+$endlist
+$component C215
+ SM*
+ C?
+ C1-1
+$endlist
+$component C216
+ SM*
+ C?
+ C1-1
+$endlist
+$component C217
+ SM*
+ C?
+ C1-1
+$endlist
+$component C301
+ SM*
+ C?
+ C1-1
+$endlist
+$component C302
+ SM*
+ C?
+ C1-1
+$endlist
+$component C303
+ SM*
+ C?
+ C1-1
+$endlist
+$component C304
+ SM*
+ C?
+ C1-1
+$endlist
+$component C305
+ SM*
+ C?
+ C1-1
+$endlist
+$component C306
+ SM*
+ C?
+ C1-1
+$endlist
+$component C307
+ SM*
+ C?
+ C1-1
+$endlist
+$component C308
+ SM*
+ C?
+ C1-1
+$endlist
+$component C309
+ SM*
+ C?
+ C1-1
+$endlist
+$component C310
+ SM*
+ C?
+ C1-1
+$endlist
+$component C311
+ SM*
+ C?
+ C1-1
+$endlist
+$component C312
+ SM*
+ C?
+ C1-1
+$endlist
+$component C313
+ SM*
+ C?
+ C1-1
+$endlist
+$component C314
+ SM*
+ C?
+ C1-1
+$endlist
+$component C315
+ SM*
+ C?
+ C1-1
+$endlist
+$component C316
+ SM*
+ C?
+ C1-1
+$endlist
+$component C317
+ SM*
+ C?
+ C1-1
+$endlist
+$component C401
+ SM*
+ C?
+ C1-1
+$endlist
+$component C402
+ SM*
+ C?
+ C1-1
+$endlist
+$component C403
+ SM*
+ C?
+ C1-1
+$endlist
+$component C404
+ SM*
+ C?
+ C1-1
+$endlist
+$component C405
+ SM*
+ C?
+ C1-1
+$endlist
+$component C406
+ SM*
+ C?
+ C1-1
+$endlist
+$component C407
+ SM*
+ C?
+ C1-1
+$endlist
+$component C408
+ SM*
+ C?
+ C1-1
+$endlist
+$component C409
+ SM*
+ C?
+ C1-1
+$endlist
+$component C410
+ SM*
+ C?
+ C1-1
+$endlist
+$component C411
+ SM*
+ C?
+ C1-1
+$endlist
+$component C412
+ SM*
+ C?
+ C1-1
+$endlist
+$component C413
+ SM*
+ C?
+ C1-1
+$endlist
+$component C414
+ SM*
+ C?
+ C1-1
+$endlist
+$component C415
+ SM*
+ C?
+ C1-1
+$endlist
+$component C416
+ SM*
+ C?
+ C1-1
+$endlist
+$component C417
+ SM*
+ C?
+ C1-1
+$endlist
+$component C501
+ SM*
+ C?
+ C1-1
+$endlist
+$component C502
+ SM*
+ C?
+ C1-1
+$endlist
+$component C503
+ SM*
+ C?
+ C1-1
+$endlist
+$component C504
+ SM*
+ C?
+ C1-1
+$endlist
+$component C505
+ SM*
+ C?
+ C1-1
+$endlist
+$component C506
+ SM*
+ C?
+ C1-1
+$endlist
+$component C507
+ SM*
+ C?
+ C1-1
+$endlist
+$component C508
+ SM*
+ C?
+ C1-1
+$endlist
+$component C509
+ SM*
+ C?
+ C1-1
+$endlist
+$component C510
+ SM*
+ C?
+ C1-1
+$endlist
+$component C511
+ SM*
+ C?
+ C1-1
+$endlist
+$component C512
+ SM*
+ C?
+ C1-1
+$endlist
+$component C513
+ SM*
+ C?
+ C1-1
+$endlist
+$component C514
+ SM*
+ C?
+ C1-1
+$endlist
+$component C515
+ SM*
+ C?
+ C1-1
+$endlist
+$component C516
+ SM*
+ C?
+ C1-1
+$endlist
+$component C517
+ SM*
+ C?
+ C1-1
+$endlist
+$component C601
+ SM*
+ C?
+ C1-1
+$endlist
+$component C602
+ SM*
+ C?
+ C1-1
+$endlist
+$component C603
+ SM*
+ C?
+ C1-1
+$endlist
+$component C604
+ SM*
+ C?
+ C1-1
+$endlist
+$component C605
+ SM*
+ C?
+ C1-1
+$endlist
+$component C606
+ SM*
+ C?
+ C1-1
+$endlist
+$component C607
+ SM*
+ C?
+ C1-1
+$endlist
+$component C608
+ SM*
+ C?
+ C1-1
+$endlist
+$component C609
+ SM*
+ C?
+ C1-1
+$endlist
+$component C610
+ SM*
+ C?
+ C1-1
+$endlist
+$component C611
+ SM*
+ C?
+ C1-1
+$endlist
+$component C612
+ SM*
+ C?
+ C1-1
+$endlist
+$component C613
+ SM*
+ C?
+ C1-1
+$endlist
+$component C614
+ SM*
+ C?
+ C1-1
+$endlist
+$component C615
+ SM*
+ C?
+ C1-1
+$endlist
+$component C616
+ SM*
+ C?
+ C1-1
+$endlist
+$component C617
+ SM*
+ C?
+ C1-1
+$endlist
+$component C701
+ SM*
+ C?
+ C1-1
+$endlist
+$component C702
+ SM*
+ C?
+ C1-1
+$endlist
+$component C703
+ SM*
+ C?
+ C1-1
+$endlist
+$component C704
+ SM*
+ C?
+ C1-1
+$endlist
+$component C705
+ SM*
+ C?
+ C1-1
+$endlist
+$component C706
+ SM*
+ C?
+ C1-1
+$endlist
+$component C707
+ SM*
+ C?
+ C1-1
+$endlist
+$component C708
+ SM*
+ C?
+ C1-1
+$endlist
+$component C709
+ SM*
+ C?
+ C1-1
+$endlist
+$component C710
+ SM*
+ C?
+ C1-1
+$endlist
+$component C711
+ SM*
+ C?
+ C1-1
+$endlist
+$component C712
+ SM*
+ C?
+ C1-1
+$endlist
+$component C713
+ SM*
+ C?
+ C1-1
+$endlist
+$component C714
+ SM*
+ C?
+ C1-1
+$endlist
+$component C715
+ SM*
+ C?
+ C1-1
+$endlist
+$component C716
+ SM*
+ C?
+ C1-1
+$endlist
+$component C717
+ SM*
+ C?
+ C1-1
+$endlist
+$component C801
+ SM*
+ C?
+ C1-1
+$endlist
+$component C802
+ SM*
+ C?
+ C1-1
+$endlist
+$component C803
+ SM*
+ C?
+ C1-1
+$endlist
+$component C804
+ SM*
+ C?
+ C1-1
+$endlist
+$component C805
+ SM*
+ C?
+ C1-1
+$endlist
+$component C806
+ SM*
+ C?
+ C1-1
+$endlist
+$component C807
+ SM*
+ C?
+ C1-1
+$endlist
+$component C808
+ SM*
+ C?
+ C1-1
+$endlist
+$component C809
+ SM*
+ C?
+ C1-1
+$endlist
+$component C810
+ SM*
+ C?
+ C1-1
+$endlist
+$component C811
+ SM*
+ C?
+ C1-1
+$endlist
+$component C812
+ SM*
+ C?
+ C1-1
+$endlist
+$component C813
+ SM*
+ C?
+ C1-1
+$endlist
+$component C814
+ SM*
+ C?
+ C1-1
+$endlist
+$component C815
+ SM*
+ C?
+ C1-1
+$endlist
+$component C816
+ SM*
+ C?
+ C1-1
+$endlist
+$component C817
+ SM*
+ C?
+ C1-1
+$endlist
+$endfootprintlist
+}
