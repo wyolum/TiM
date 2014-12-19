@@ -13,6 +13,15 @@ void setup(){
   tim.setall(Color(255, 255, 255));
   tim.show();
   delay(1000);
+  tim.setall(Color(255, 0, 0));
+  tim.show();
+  delay(1000);
+  tim.setall(Color(0, 255, 0));
+  tim.show();
+  delay(1000);
+  tim.setall(Color(0, 0, 255));
+  tim.show();
+  delay(1000);
 }
 
 uint32_t count = 0;
@@ -25,7 +34,7 @@ void loop(){
   
   // turn off column
   for(row = 0; row < tim.n_strip; row++){
-    tim.setPixel(row, col, 0);
+  //     tim.setPixel(row, col, 0);
   }
 
   // turn on new column

@@ -10,18 +10,39 @@
 Adafruit_NeoPixel strip = Adafruit_NeoPixel();
 
 void setup() {
-  strip.setup(64, 2, NEO_GRB + NEO_KHZ800);
+  strip.setup(250, 2, NEO_GRB + NEO_KHZ800);
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
 }
 
 void loop() {
   // Some example procedures showing how to display to the pixels:
-  colorWipe(strip.Color(255, 0, 0), 50); // Red
-  colorWipe(strip.Color(0, 255, 0), 50); // Green
-  colorWipe(strip.Color(0, 0, 255), 50); // Blue
-  // rainbow(20);
+  colorWipe(strip.Color(0, 0, 0), 0); // Off
+  colorWipe(strip.Color(255, 0, 0), 1); // Red
+  colorWipe(strip.Color(0, 255, 0), 1); // Green
+  colorWipe(strip.Color(0, 0, 255), 1); // Blue
+  rainbow(20);
   rainbowCycle(0);
+  colorWipe(strip.Color(0, 0, 0), 0); // Off
+  int i = 0;
+  while(i < strip.numPixels() * 3){
+    strip.setPixelColor(i % strip.numPixels(), strip.Color(0, 0, 0));
+    strip.setPixelColor(i % strip.numPixels() + 1, strip.Color(255, 0, 0));
+    
+    if(i % 2 == 0){
+      strip.setPixelColor((i/2 + strip.numPixels()) % strip.numPixels(), strip.Color(0, 0, 0));
+      strip.setPixelColor((i/2 + 1 + strip.numPixels()) % strip.numPixels(), strip.Color(0, 255, 0));
+    }
+    if(i % 3 == 0){
+      strip.setPixelColor((i/3 + strip.numPixels()) % strip.numPixels(), strip.Color(0, 0, 0));
+      strip.setPixelColor((i/3 + 1 + strip.numPixels()) % strip.numPixels(), strip.Color(0, 0, 255));
+    }
+    strip.show();
+    delay(80);
+    i += 1;
+  }
+  colorWipe(strip.Color(0, 0, 0), 0); // Off
+  while(1); delay(1000);
 }
 
 // Fill the dots one after the other with a color
