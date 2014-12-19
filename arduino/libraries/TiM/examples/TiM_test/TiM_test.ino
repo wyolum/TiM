@@ -34,7 +34,7 @@ void loop(){
   
   // turn off column
   for(row = 0; row < tim.n_strip; row++){
-  //     tim.setPixel(row, col, 0);
+  // tim.setPixel(row, col, 0);
   }
 
   // turn on new column

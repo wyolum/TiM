@@ -21,7 +21,7 @@ void loop() {
   colorWipe(strip.Color(255, 0, 0), 1); // Red
   colorWipe(strip.Color(0, 255, 0), 1); // Green
   colorWipe(strip.Color(0, 0, 255), 1); // Blue
-  rainbow(20);
+  rainbow(1);
   rainbowCycle(0);
   colorWipe(strip.Color(0, 0, 0), 0); // Off
   int i = 0;
@@ -57,12 +57,10 @@ void colorWipe(uint32_t c, uint8_t wait) {
 void rainbow(uint8_t wait) {
   uint16_t i, j;
 
-  for(j=0; j<256; j++) {
     for(i=0; i<strip.numPixels(); i++) {
       strip.setPixelColor(i, Wheel((i+j) & 255));
-    }
-    strip.show();
-    delay(wait);
+      strip.show();
+      delay(wait);
   }
 }
 
