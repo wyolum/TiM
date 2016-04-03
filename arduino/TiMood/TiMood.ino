@@ -4,6 +4,7 @@
   A1 -- POT -- Green
   A2 -- POT -- Blue
   A3 -- POT -- Fader
+  D2 -- TiM array in series.
  */
 
 #include <Adafruit_NeoPixel.h>
