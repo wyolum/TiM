@@ -6,13 +6,13 @@
 #include "Adafruit_NeoPixel.h"
 // pin defines. Note potcolor.h defines the Potentiometer pin
 //left LED strip/matrix
-#define LEFT 4
+#define LEFT 5
 //Right LED strip/matrix
 #define RIGHT 11
 //Mode Button
-#define BUTTONPIN 3
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(128, LEFT, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(128,RIGHT, NEO_GRB + NEO_KHZ800);
+#define BUTTONPIN 7
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(256, LEFT, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(256,RIGHT, NEO_GRB + NEO_KHZ800);
 
 // mode definitions (also include the appropriate header file above.
 rainbow myRainbow;

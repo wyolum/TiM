@@ -1,5 +1,5 @@
 #include "displayMode.h"
-#define potPin A1
+#define potPin A0
 // "Connection Machine" style display. Random blinky Red lights
 // speed is set with Potentiometer
 class cm1 : public displayMode{

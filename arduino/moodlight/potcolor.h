@@ -1,5 +1,5 @@
 #include "displayMode.h"
-#define potPin A1
+#define potPin A0
 class potcolor : public displayMode{
   public:
     potcolor(void);

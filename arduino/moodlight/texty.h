@@ -5,11 +5,12 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
-#define potPin A1
-#define PIN 4
-  Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(16, 8, PIN,
-  NEO_MATRIX_TOP     + NEO_MATRIX_RIGHT +
-  NEO_MATRIX_ROWS + NEO_MATRIX_PROGRESSIVE,
+#define potPin A0
+#define PIN 5
+// the below code is configured for Two TiM's connected in a vertical format to form a 16x16 matrix.
+  Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(16, 8, 2, 1, PIN,  
+  NEO_TILE_TOP   + NEO_TILE_RIGHT   + NEO_TILE_ROWS   + NEO_TILE_PROGRESSIVE +
+  NEO_MATRIX_TOP + NEO_MATRIX_RIGHT + NEO_MATRIX_ROWS + NEO_MATRIX_PROGRESSIVE,
   NEO_GRB            + NEO_KHZ800);
 class texty : public displayMode{
   public:
@@ -36,7 +37,7 @@ void texty::draw(void){
   setDelay(analogRead(potPin));
   matrix.fillScreen(0);
   matrix.setCursor(x, 0);
-  matrix.print(F("Maker's Asylum"));
+  matrix.print(F("Maker's Asylum :)"));
   if(--x < -72) {
     x = matrix.width();
     if(++pass >= 3) pass = 0;
