@@ -1,7 +1,7 @@
 #ifndef ___BREATHH___
 #define ___BREATHH___
 #include "displayMode.h"
-#define potPin A1
+#define potPin A0
 class breathe : public displayMode{
   public:
     breathe(void);

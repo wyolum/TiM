@@ -18,7 +18,7 @@ void potcolor::draw(void){
       int reading = analogRead(potPin);
       // change the map below to get your full scale reading.
       // for some reason, I'm not getting a full range (0-1023)
-      byte mappedReading = (byte)map(reading,0,990,0,254);
+      byte mappedReading = (byte)map(reading,0,1023,0,254);
 /*
       Serial.print("reading,mappedreading: ");
       Serial.print(reading);Serial.print(",");

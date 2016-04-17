@@ -8,7 +8,7 @@
 //left LED strip/matrix
 #define LEFT 5
 //Right LED strip/matrix
-#define RIGHT 11
+#define RIGHT 5
 //Mode Button
 #define BUTTONPIN 7
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(256, LEFT, NEO_GRB + NEO_KHZ800);
